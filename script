@@ -1,0 +1,90 @@
+function shake8Ball() {
+    const answerElement = document.getElementById('answer');
+    const randomIndex = Math.floor(Math.random() * 26); // 26 correspond au nombre total de réponses
+    let answer;
+
+    switch(randomIndex) {
+        case 0:
+            answer = "Oui, absolument";
+            break;
+        case 1:
+            answer = "Les perspectives sont bonnes";
+            break;
+        case 2:
+            answer = "Sans aucun doute";
+            break;
+        case 3:
+            answer = "Certainement";
+            break;
+        case 4:
+            answer = "Vous pouvez compter dessus";
+            break;
+        case 5:
+            answer = "Comme je le vois, oui";
+            break;
+        case 6:
+            answer = "Très probable";
+            break;
+        case 7:
+            answer = "Les signes indiquent oui";
+            break;
+        case 8:
+            answer = "Oui";
+            break;
+        case 9:
+            answer = "C'est certain";
+            break;
+        case 10:
+            answer = "Réponse floue, réessayez";
+            break;
+        case 11:
+            answer = "Demandez à nouveau plus tard";
+            break;
+        case 12:
+            answer = "Mieux vaut ne pas vous le dire maintenant";
+            break;
+        case 13:
+            answer = "Impossible de prédire maintenant";
+            break;
+        case 14:
+            answer = "Concentrez-vous et demandez à nouveau";
+            break;
+        case 15:
+            answer = "Ne comptez pas dessus";
+            break;
+        case 16:
+            answer = "Ma réponse est non";
+            break;
+        case 17:
+            answer = "Mes sources disent non";
+            break;
+        case 18:
+            answer = "Les perspectives ne sont pas bonnes";
+            break;
+        case 19:
+            answer = "Très douteux";
+            break;
+        case 20:
+            answer = "Peu probable";
+            break;
+        case 21:
+            answer = "Cela me semble difficile";
+            break;
+        case 22:
+            answer = "Je ne pense pas";
+            break;
+        case 23:
+            answer = "N'y comptez pas";
+            break;
+        case 24:
+            answer = "Non, désolé";
+            break;
+        case 25:
+            answer = "Ça ne va pas arriver";
+            break;
+        default:
+            answer = "Erreur, réessayez";
+    }
+
+    answerElement.textContent = answer;
+}
