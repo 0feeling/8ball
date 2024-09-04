@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boule Magique 8</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Boule Magique 8</h1>
+        <p>Posez votre question :</p>
+        <input type="text" id="question" placeholder="Entrez votre question ici...">
+        <button onclick="shake8Ball()">Demander à la Boule 8</button>
+        <p id="answer"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
